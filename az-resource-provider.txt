@@ -1,2 +1,3 @@
+ az account show
  az role assignment list --output table
  az provider list --query "[].{Provider:namespace, Status:registrationState}" --out table | grep -E 'Microsoft.Network|Microsoft.ContainerService|Microsoft.Compute|Microsoft.Storage'
