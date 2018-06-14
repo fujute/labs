@@ -5,8 +5,8 @@ az aks install-cli
 az aks get-credentials --resource-group 1myResourceGroup --name myK8sCluster
 kubectl get nodes
 # file location : https://docs.microsoft.com/en-us/azure/aks/kubernetes-walkthrough
-kubectl create -f azure-vote.yaml
-#kubectl apply -f azure-vote.yaml
+kubectl create -f https://raw.githubusercontent.com/fuju9w/labs/master/azure-vote.yaml 
+#kubectl apply -f https://raw.githubusercontent.com/fuju9w/labs/master/azure-vote.yaml 
 kubectl get service azure-vote-front --watch
 az aks browse --resource-group 1myResourceGroup --name myAKSCluster
 
