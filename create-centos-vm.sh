@@ -1,12 +1,12 @@
 #!/bin/bash
-## for creating list of CentOS VM - unmagaged disk 
+## for creating list of CentOS VM - unmagaged disk by @fujute : no22th
 RG=ResourceGroupVM
 VMSKUE=Standard_D2S_v3
 VNETE=myVnet
 STORAGEE=mystragef
 VSUBNETE=mySubnet
 VMPrefix=myvmtod
-NUMBEROfVM="Please check in you for loop"
+NUMBEROfVM="Please check line #16 for number of VMs"
 
 az group create --name $RG --location southeastasia
 az storage account create -n $STORAGEE -g $RG -l southeastasia --sku Standard_LRS
