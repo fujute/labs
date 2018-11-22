@@ -1,4 +1,7 @@
 #!/bin/bash
+# az account show
+# az ad sp create-for-rbac --role="Contributor" --scopes="/subscriptions/MyNumber" --name="Fabmedical-sp-FL"
+## https://docs.microsoft.com/en-us/cli/azure/create-an-azure-service-principal-azure-cli?view=azure-cli-latest
 az group create --name 1myResourceGroup --location southeastasia
 az aks create --resource-group 1myResourceGroup --name myK8sCluster --node-count 1 --generate-ssh-keys
 az aks install-cli
