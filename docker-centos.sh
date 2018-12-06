@@ -9,3 +9,4 @@ yum list docker-ce --showduplicates | sort -r
 # https://linuxize.com/post/how-to-install-node-js-on-centos-7/
 curl -sL https://rpm.nodesource.com/setup_10.x | sudo bash -
 sudo yum install nodejs
+# sudo docker run -d -p 80:80 nginx
