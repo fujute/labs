@@ -29,3 +29,8 @@ az vm create \
   --subnet $VSUBNETE \
   --generate-ssh-keys
 done
+
+# 
+# az vm start --name {vm name} --resource-group $RG
+# az vm stop --name {vm name} --resource-group $RG
+# az vm deallocate --name {vm name} --resource-group $RG
